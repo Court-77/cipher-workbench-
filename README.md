@@ -61,3 +61,7 @@ python main.py
 - Automatic cipher type detection
 - Better plaintext scoring using n-grams
 - CLI interface
+
+
+## Disclaimer
+This project is for educational purposes exploring classical cryptography techniques.
