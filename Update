@@ -1,0 +1,26 @@
+from caesar_cipher import crack_caesar
+
+# ---------------------------
+# Cipher Workbench 🔐
+# ---------------------------
+# A simple runner for your cryptanalysis toolkit
+# ---------------------------
+
+def main():
+    print("Cipher Workbench 🔐")
+    print("-------------------")
+
+    cipher = "LXFOPVEFRNHR"
+
+    print(f"\nCiphertext: {cipher}\n")
+
+    results = crack_caesar(cipher)
+
+    print("Top 5 candidate decryptions:\n")
+
+    for score, shift, text in results[:5]:
+        print(f"Shift {shift:2} | Score {score:.2f} | {text}")
+
+
+if __name__ == "__main__":
+    main()
