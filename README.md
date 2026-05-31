@@ -33,3 +33,31 @@ Measures how closely a text matches expected English letter frequencies.
 ## Example
 
 Input ciphertext:
+LXFOPVEFRNHR
+
+Output:
+Shift 13 | Score 26.16 | YKSBCIRSEAUE
+Shift 23 | Score 42.18 | ATTACKATDAWN
+
+
+Best guess is ranked by lowest chi-squared score.
+
+---
+
+## How to Run
+
+```bash
+python main.py
+
+
+## What I Learned
+- Frequency analysis in cryptography
+- Statistical language modeling
+- Brute-force key search techniques
+- Python modular program structure
+
+## Future Improvements
+- Vigenère cipher breaking
+- Automatic cipher type detection
+- Better plaintext scoring using n-grams
+- CLI interface
